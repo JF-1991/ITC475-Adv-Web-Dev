@@ -5,14 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
-        /* your CSS will go here */
+        /* Default Margin/Padding */
         * {
             margin: 0;
             padding: 0;
         }
+
+        /* Center Logo for Mobile */
+        .center {
+            display:block;
+        }
+        @media only screen and (max-width: 600px) {
+            .center {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+
+        /* Header CSS */
         #Header {
+            width: 100%;
+            height: 150px;
             background: #add8e6;
         }
+        #Header-Separate {
+            width: 100%;
+            height: 20px;
+            background: #d3d3d3;
+        }
+        
+        /* Nav Links CSS */
         #Nav-Link {
             display: flex;
             justify-content: center;
@@ -32,14 +55,34 @@
             text-decoration: underline;
             color: red;
         }
+       
+        /*  */
+
+        /* Footer CSS */
+        #Footer {
+            text-align: left;
+            color: white;
+            background: black;
+            padding-left: 20px;
+        }
+        #Footer a {
+            color: white;
+            text-decoration: none;
+        }
+        #Footer a:hover {
+            color: #ffa500;
+        }
         </style>
     </head>
     <body>
-    <!-- your HTML will go here -->
+        <!-- Header HTML -->
         <div id="Header">
-            <img src="http://localhost/ITC475-Adv-Web-Dev/MegaTravel/site%20files/mega%20travel%20logo.png" alt="Logo" width="300">
+            <img src="http://localhost/ITC475-Adv-Web-Dev/MegaTravel/site%20files/mega%20travel%20logo.png" alt="Logo" width="300" class="center">
         </div>
-       
+        <div id="Header-Separate">
+        </div>
+        
+        <!-- Nav Links HTML -->
         <div id="Nav-Link">
             <ul>
                 <li><a href="">Home</a></li>
@@ -48,10 +91,14 @@
             </ul>
         </div>
         
+        <!--  -->
         
-
+        <!-- Footer HTML -->
         <div id="Footer">
-
+            <p>Copyright Protected. All Rights Reserved.</p>
+            <br>
+            <p>MEGA TRAVELS</p>
+            <a href="mailto:mega@travel.com">mega@travel.com</a>
         </div>
     </body>
 </html>
