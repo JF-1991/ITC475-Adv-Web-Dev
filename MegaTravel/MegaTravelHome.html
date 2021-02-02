@@ -40,6 +40,11 @@
             display: flex;
             justify-content: center;
         }
+        @media only screen and (max-width: 600px) {
+            #Nav-Link {
+                background: black;
+            }
+        }
         #Nav-Link ul {
             display: flex;
             list-style: none;
@@ -51,12 +56,56 @@
             padding: 15px;
             text-decoration: none;
         }
+        @media only screen and (max-width: 600px) {
+            #Nav-Link a {
+            color: white;
+            font-weight: bold;
+            display: block;
+            padding: 15px;
+            text-decoration: none;
+            }
+        }
         #Nav-Link a:hover {
             text-decoration: underline;
             color: red;
         }
        
-        /*  */
+        /* Homepage Text */
+        #Trv-Pkg {
+            color: black;
+            width: 50%;
+            margin-bottom: 20px;
+        }
+        @media only screen and (max-width: 600px) {
+            #Trv-Pkg {
+            width: 100%;
+            }
+        }
+
+        /* Destination Buttons CSS*/
+        #Button-Destination {
+            display: inline-flex;
+
+        }
+        @media only screen and (max-width: 600px) {
+            #Button-Maldive {
+            display: inline-block;
+
+        }
+        }
+        #Button-Destination button {
+            padding: 5px 5px;
+            margin: 5px 5px;
+            text-align: left;
+        }
+        #Button-Destination button img {
+            width: 400px;
+            position: relative;
+        }
+        #Button-Destination button:hover {
+            background-color: black;
+            color: white;
+        }
 
         /* Footer CSS */
         #Footer {
@@ -74,6 +123,7 @@
         }
         </style>
     </head>
+
     <body>
         <!-- Header HTML -->
         <div id="Header">
@@ -91,7 +141,47 @@
             </ul>
         </div>
         
-        <!--  -->
+        <!-- Homepage Text -->
+        <div id="Trv-Pkg">
+            <h1>Travel Packages</h1>
+            <Br>
+            <p>We are specialized wirh international travels and tours. Our expertized and experience can save you 100's of dollar in your pocket. Beside the 
+                money you can also save you valuable time at the time of transit or tour. You decide your budget and tghe time from your comfort zone. We will
+                make it happen for you for an exceptional memory. Mega Travels is committed for an excellent service and support for all of its past, present, 
+                and future customers. we are here today only for you. We remind ourselves everyday and every monent with a sincere gratutide.</p>
+        </div>
+
+        <!-- Destination Button HTML -->
+        <div id="Button-Destination">
+            <button>
+                <img src="http://localhost/ITC475-Adv-Web-Dev/MegaTravel/site%20files/maldives.png" alt="Maldives" >
+                <h1>Maldives Resort</h1>
+                <p1 style="color: gray;">$1800.99</p1><br>
+                <p2>Price you pay <u><b>$999.99</b></u></p2><br>
+                <p3 style="color: green;">You're saving $801</p3>
+            </button>
+            <button>
+                <img src="http://localhost/ITC475-Adv-Web-Dev/MegaTravel/site%20files/mexico.png" alt="Mexico" >
+                <h1>Mexico Resort (All Inclusive!)</h1>
+                <p1 style="color: gray;">$2999.99</p1><br>
+                <p2>Price you pay <u><b>$2199.99</b></u></p2><br>
+                <p3 style="color: green;">You're saving $800</p3>
+            </button>
+            <button>
+                <img src="http://localhost/ITC475-Adv-Web-Dev/MegaTravel/site%20files/newzealand.png" alt="Maldives" >
+                <h1>New Zealand Trek</h1>
+                <p1 style="color: gray;">$2499.00</p1><br>
+                <p2>Price you pay <u><b>$2100.00</b></u></p2><br>
+                <p3 style="color: green;">You're saving $399</p3>
+            </button>
+            <button>
+                <img src="http://localhost/ITC475-Adv-Web-Dev/MegaTravel/site%20files/venice.png" alt="Maldives" >
+                <h1>Venice Italy</h1>
+                <p1 style="color: gray;">$4100.00</p1><br>
+                <p2>Price you pay <u><b>$3699.00</b></u></p2><br>
+                <p3 style="color: green;">You're saving $400</p3>
+            </button>
+        </div>
         
         <!-- Footer HTML -->
         <div id="Footer">
