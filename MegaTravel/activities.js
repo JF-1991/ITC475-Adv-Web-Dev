@@ -59,7 +59,7 @@ document.getElementById("italy").onclick = function() { // italy
 };
 
 // display options for destinations
-function displayOptions(num)
+function displayOptions(num) // num = 1 + number of options
 {
     // set options
     document.getElementById("opt1label").innerHTML = option1;
@@ -75,6 +75,7 @@ function displayOptions(num)
         check = "option" + String(i);
         document.getElementById(check).style.visibility = "visible";
     }
+    document.getElementById("submit").style.visibility = "visible"; 
 }
 
 // uncheck options on new destination select
@@ -97,5 +98,6 @@ function hidden()
     {
         check = "option" + String(i);
         document.getElementById(check).style.visibility = "hidden";
-    }          
+    }
+    document.getElementById("submit").style.visibility = "hidden";  
 }
