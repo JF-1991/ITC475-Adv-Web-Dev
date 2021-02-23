@@ -51,7 +51,7 @@ document.getElementById("italy").onclick = function() { // italy
     option2 = "Theatre";
     option3 = "Parks and Rec";
     option4 = "City Tours";
-    option5 = " ";
+    option5 = "";
     document.getElementById("activity-title").innerHTML = "Activities Available for Venice Italy";
     uncheck();
     hidden();
