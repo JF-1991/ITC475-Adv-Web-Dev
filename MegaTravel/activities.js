@@ -16,41 +16,41 @@ hidden();
 
 // select destinaton option
 document.getElementById("maldives").onclick = function() { // maldives
-    option1 = "City Tours";
-    option2 = "Sports";
-    option3 = "Cycling";
-    option4 = "Museums";
+    option1 = "Museums";
+    option2 = "Sailing";
+    option3 = "Beach";
+    option4 = "Hiking";
     option5 = "Boating";
     document.getElementById("activity-title").innerHTML = "Activities Available for Maldives Resort";
     uncheck();
     displayOptions(6)
 };
 document.getElementById("mexico").onclick = function() { // mexico
-    option1 = "Museums";
-    option2 = "Sailing";
-    option3 = "Beach";
-    option4 = "Hiking";
-    option5 = "Boating";
-    document.getElementById("activity-title").innerHTML = "Activities Available for Mexico Resort";
-    uncheck();
-    displayOptions(6);
-};
-document.getElementById("new-zealand").onclick = function() { // new-zealand
-    option1 = "Museums";
-    option2 = "Theatre";
-    option3 = "Parks and Rec";
-    option4 = "City Tours";
-    option5 = " ";
-    document.getElementById("activity-title").innerHTML = "Activities Available for New Zealand Trek";
-    uncheck();
-    hidden();
-    displayOptions(5);
-};
-document.getElementById("italy").onclick = function() { // italy
     option1 = "Parks and Rec";
     option2 = "Beaches";
     option3 = "Boating";
     option4 = "Snorkeling";
+    option5 = "";
+    document.getElementById("activity-title").innerHTML = "Activities Available for Mexico Resort";
+    uncheck();
+    hidden();
+    displayOptions(5);
+};
+document.getElementById("new-zealand").onclick = function() { // new-zealand
+    option1 = "City Tour";
+    option2 = "Sports";
+    option3 = "Cycling";
+    option4 = "Museums";
+    option5 = "Boating";
+    document.getElementById("activity-title").innerHTML = "Activities Available for New Zealand Trek";
+    uncheck();
+    displayOptions(6);
+};
+document.getElementById("italy").onclick = function() { // italy
+    option1 = "Museums";
+    option2 = "Theatre";
+    option3 = "Parks and Rec";
+    option4 = "City Tours";
     option5 = " ";
     document.getElementById("activity-title").innerHTML = "Activities Available for Venice Italy";
     uncheck();
