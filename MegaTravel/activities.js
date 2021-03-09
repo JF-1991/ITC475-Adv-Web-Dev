@@ -58,7 +58,7 @@ document.getElementById("veniceButton").onclick = function() { // italy
     displayOptions(5);
 };
 
-document.getElementById("clear").onclick = function() {
+document.getElementById("reset").onclick = function() {
     option1 = "";
     option2 = "";
     option3 = "";
