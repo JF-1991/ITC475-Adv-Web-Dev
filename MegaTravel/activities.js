@@ -59,7 +59,14 @@ document.getElementById("veniceButton").onclick = function() { // italy
 };
 
 document.getElementById("clear").onclick = function() {
+    option1 = "";
+    option2 = "";
+    option3 = "";
+    option4 = "";
+    option5 = "";
     hidden();
+    uncheck();
+    displayOptions(0);
 };
 
 // display options for destinations
