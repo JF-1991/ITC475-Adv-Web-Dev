@@ -11,14 +11,14 @@ var date = hour + ":" + minute;
 var icon;
 
 var sun = document.createElement("img");
-sun.setAttribute("src", "http://localhost/ITC475-Adv-Web-Dev/MegaTravel/site%20files/sunIcon.png");
+sun.setAttribute("src", "siteFiles/sunIcon.png");
 sun.setAttribute("width", "100");
 sun.setAttribute("height", "100");
 sun.setAttribute("alt", "sun.png");
 sun.setAttribute("class", "center-time");
 
 var moon = document.createElement("img");
-moon.setAttribute("src", "http://localhost/ITC475-Adv-Web-Dev/MegaTravel/site%20files/moonIcon.png");
+moon.setAttribute("src", "siteFiles/moonIcon.png");
 moon.setAttribute("width", "100");
 moon.setAttribute("height", "100");
 moon.setAttribute("alt", "moon.png");
