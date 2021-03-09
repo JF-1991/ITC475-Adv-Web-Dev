@@ -15,47 +15,51 @@ var italy = false;
 hidden();
 
 // select destinaton option
-document.getElementById("maldives").onclick = function() { // maldives
+document.getElementById("maldivesButton").onclick = function() { // maldives
     option1 = "Museums";
     option2 = "Sailing";
     option3 = "Beach";
     option4 = "Hiking";
     option5 = "Boating";
-    document.getElementById("activity-title").innerHTML = "Activities Available for Maldives Resort";
+    //document.getElementById("activity-title").innerHTML = "Activities Available for Maldives Resort";
     uncheck();
     displayOptions(6)
 };
-document.getElementById("mexico").onclick = function() { // mexico
+document.getElementById("mexicoButton").onclick = function() { // mexico
     option1 = "Parks and Rec";
     option2 = "Beaches";
     option3 = "Boating";
     option4 = "Snorkeling";
     option5 = "";
-    document.getElementById("activity-title").innerHTML = "Activities Available for Mexico Resort";
+    //document.getElementById("activity-title").innerHTML = "Activities Available for Mexico Resort";
     uncheck();
     hidden();
     displayOptions(5);
 };
-document.getElementById("new-zealand").onclick = function() { // new-zealand
+document.getElementById("newzealandButton").onclick = function() { // new-zealand
     option1 = "City Tour";
     option2 = "Sports";
     option3 = "Cycling";
     option4 = "Museums";
     option5 = "Boating";
-    document.getElementById("activity-title").innerHTML = "Activities Available for New Zealand Trek";
+    //document.getElementById("activity-title").innerHTML = "Activities Available for New Zealand Trek";
     uncheck();
     displayOptions(6);
 };
-document.getElementById("italy").onclick = function() { // italy
+document.getElementById("veniceButton").onclick = function() { // italy
     option1 = "Museums";
     option2 = "Theatre";
     option3 = "Parks and Rec";
     option4 = "City Tours";
     option5 = "";
-    document.getElementById("activity-title").innerHTML = "Activities Available for Venice Italy";
+    //document.getElementById("activity-title").innerHTML = "Activities Available for Venice Italy";
     uncheck();
     hidden();
     displayOptions(5);
+};
+
+document.getElementById("clear").onclick = function() {
+    hidden();
 };
 
 // display options for destinations
@@ -75,7 +79,7 @@ function displayOptions(num) // num = 1 + number of options
         check = "option" + String(i);
         document.getElementById(check).style.visibility = "visible";
     }
-    document.getElementById("submit").style.visibility = "visible"; 
+    //document.getElementById("submit").style.visibility = "visible"; 
 }
 
 // uncheck options on new destination select
@@ -99,5 +103,5 @@ function hidden()
         check = "option" + String(i);
         document.getElementById(check).style.visibility = "hidden";
     }
-    document.getElementById("submit").style.visibility = "hidden";  
+    //document.getElementById("submit").style.visibility = "hidden";  
 }
