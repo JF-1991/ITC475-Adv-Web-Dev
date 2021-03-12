@@ -5,10 +5,100 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
+            body {
+                background-image: url("MidtermSiteFiles/StatusPageBackground.png");
+                background-size: 1920px 1080px;
+            }
+            /* Heading CSS */
+            #heading h1{
+                color: rgba(163, 4, 142, 0.685);
+                text-decoration: underline;
+                font-size: 70px;
+                left:100px;
+                position: absolute;
+                top: 0px;
+            }
+            #heading p{
+                color: rgba(163, 4, 142, 0.685);
+                text-decoration: underline;
+                font-size: 15px;
+                left:100px;
+                position: absolute;
+                top: 115px;
+            }
             
+            /* Footer Button CSS */
+            #Footer button{
+                border: none;
+                color: rgba(163, 4, 142, 0.685);
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                position: absolute;
+                bottom: 0;
+            }
+            input[type=number] {
+                width: 250px;
+                padding: 12px 20px;
+                margin: 8px 0;
+                box-sizing: border-box;
+                border: 2px solid rgba(163, 4, 142, 0.685);
+                border-radius: 4px;
+            }
         </style>
     </head>
     <body>
         
+
+        <div id="Footer">
+            <button onclick="window.location.href='Status.html';">To Status Page</button>
+        </div>
+        <div id="heading">
+            <h1 id="head">Settings Page</h1>
+            <p>Enter Times Below (0 - 24)</p>
+            <h2></h2>
+        </div>
+        <form id="Timeselect">
+            <input type="number" id="LRStart" name="LRStart" placeholder="Enter Living Room Start Hour" style="position: absolute; top:150px; left:100px;">
+            <input type="number" id="LREnd" name="LREnd" placeholder="Enter Living Room End Hour" style="position: absolute; top:150px; left:375px;">
+
+            <input type="number" id="BR1Start" name="BR1Start" placeholder="Enter Bedroom 1 Start Hour" style="position: absolute; top:200px; left:100px;">
+            <input type="number" id="BR1End" name="BR1End" placeholder="Enter Bedroom 1 End Hour" style="position: absolute; top:200px; left:375px;">
+
+            <input type="number" id="BR2Start" name="BR2Start" placeholder="Enter Bedroom 2 Start Hour" style="position: absolute; top:250px; left:100px;">
+            <input type="number" id="BR2End" name="BR2End" placeholder="Enter Bedroom 2 End Hour" style="position: absolute; top:250px; left:375px;">
+            
+            <input type="number" id="BRStart" name="BRStart" placeholder="Enter Bathroom Start Hour" style="position: absolute; top:300px; left:100px;">
+            <input type="number" id="BREnd" name="BREnd" placeholder="Enter Bathroom End Hour" style="position: absolute; top:300px; left:375px;">
+
+            <input type="number" id="WashStart" name="WashStart" placeholder="Enter Washer Start Hour" style="position: absolute; top:350px; left:100px;">
+            <input type="number" id="WashEnd" name="WashEnd" placeholder="Enter Washer End Hour" style="position: absolute; top:350px; left:375px;">
+
+            <input type="number" id="DryStart" name="DryStart" placeholder="Enter Dryer Start Hour" style="position: absolute; top:400px; left:100px;">
+            <input type="number" id="DryEnd" name="DryEnd" placeholder="Enter Dryer End Hour" style="position: absolute; top:400px; left:375px;">
+
+            <input type="number" id="FDStart" name="FDStart" placeholder="Enter Front Door Start Time" style="position: absolute; top:450px; left:100px;">
+            <input type="number" id="FDEnd" name="FDEnd" placeholder="Enter Front Door End Time" style="position: absolute; top:450px; left:375px;">
+
+            <input type="number" id="BDStart" name="BDStart" placeholder="Enter Back Door Start Time" style="position: absolute; top:500px; left:100px;">
+            <input type="number" id="BDEnd" name="BDEnd" placeholder="Enter Back Door End Time" style="position: absolute; top:500px; left:375px;">
+
+            <input type="number" id="GDStart" name="GDStart" placeholder="Enter Garage Door Start Time" style="position: absolute; top:550px; left:100px;">
+            <input type="number" id="GDEnd" name="GDEnd" placeholder="Enter Garage Door End Time" style="position: absolute; top:550px; left:375px;">
+
+            <input type="number" id="KStart" name="KStart" placeholder="Enter Kitchen Start Time" style="position: absolute; top:600px; left:100px;">
+            <input type="number" id="KEnd" name="KEnd" placeholder="Enter Kitchen End Time" style="position: absolute; top:600px; left:375px;">
+
+            <input type="number" id="DRStart" name="DRStart" placeholder="Enter Dining Room Start Time" style="position: absolute; top:650px; left:100px;">
+            <input type="number" id="DREnd" name="DREnd" placeholder="Enter Dining Room End Time" style="position: absolute; top:650px; left:375px;">
+        
+            <input type="submit" id="submit" onclick="getData()">
+        </form>
+        <script type="text/javascript" src="Activities.js"></script>
     </body>
 </html>
