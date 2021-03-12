@@ -5,10 +5,89 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <style>
-
+            body {
+                background-image: url("MidtermSiteFiles/StatusPageBackground.png");
+                background-size: 1920px 1080px;
+            }
+            /* Footer Button CSS */
+            #Footer button{
+                border: none;
+                color: black;
+                padding: 16px 32px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-size: 16px;
+                margin: 4px 2px;
+                transition-duration: 0.4s;
+                cursor: pointer;
+                position: absolute;
+                bottom: 0;
+            }
         </style>
     </head>
-    <body>
+    
+    <icons>
+        <LRL>
+            <img src="MidtermSiteFiles/LightOn.png" alt="LRL_ON" id="LRL_ON" width="100" height="100" style="position: absolute; top:100px; left:1450px;">
+            <img src="MidtermSiteFiles/LightOff.png" alt="LRL_OFF" id="LRL_OFF" width="100" height="100" style="position: absolute; top:100px; left:1450px; display: none;">
+        </LRL>
+            
+        <BRL1>
+            <img src="MidtermSiteFiles/LightOn1.png" alt="BRL1_ON" id="BRL1_ON" width="100" height="100" style="position: absolute; top:200px; left:1350px;"
+            <img src="MidtermSiteFiles/LightOff.png" alt="BRL1L_OFF" id="BRL1_OFF" width="100" height="100" style="position: absolute; top:200px; left:1350px; display: none;">
+        </BRL1>
 
+        <BRL2>
+            <img src="MidtermSiteFiles/LightOn2.png" alt="BRL2_ON" id="BRL2_ON" width="100" height="100" style="position: absolute; top:300px; left:1250px;"
+            <img src="MidtermSiteFiles/LightOff.png" alt="BRL2_OFF" id="BRL2_OFF" width="100" height="100" style="position: absolute; top:300px; left:1250px; display: none;">
+        </BRL2>
+
+        <BRF>
+            <img src="MidtermSiteFiles/BathFanOn.png" alt="BRF_ON" id="BRF_OFF" width="100" height="100" style="position: absolute; top:400px; left:1150px;">
+            <img src="MidtermSiteFiles/FanOff.png" alt="BRF_OFF" id="BRF_OFF" width="100" height="100" style="position: absolute; top:400px; left:1150px; display: none;">
+        </BRF>
+
+        <Wash>
+            <img src="MidtermSiteFiles/WasherOn.png" alt="Wash_ON" id="WASH_ON" width="100" height="100" style="position: absolute; top:500px; left:925px;">
+            <img src="MidtermSiteFiles/WashDryOff.png" alt="Wash_OFF" id="Wash_OFF" width="100" height="100" style="position: absolute; top:500px; left:925px; display: none;">
+        </Wash>
+        
+        <Dryer>
+            <img src="MidtermSiteFiles/DryerOn.png" alt="Dryer_ON" id="Dryer_ON" width="100" height="100" style="position: absolute; top:500px; left:800px">
+            <img src="MidtermSiteFiles/WashDryOff.png" alt="Wash_OFF" id="Wash_OFF" width="100" height="100" style="position: absolute; top:500px; left:800px; display: none;">
+        </Dryer>
+        
+        <FD>
+            <img src="MidtermSiteFiles/FrontDoorUnlock.png" alt="FD_ON" id="FD_ON" width="100" height="100" style="position: absolute; top:600px; left:700px;">
+            <img src="MidtermSiteFiles/DoorLock.png" alt="FD_OFF" id="FD_OFF" width="100" height="100" style="position: absolute; top:600px; left:700px; display: none;">
+        </FD>
+        
+        <BD>
+            <img src="MidtermSiteFiles/BackDoorUnlock.png" alt="BD_ON" id="BD_ON" width="100" height="100" style="position: absolute; top:600px; left:575px;">
+            <img src="MidtermSiteFiles/DoorLock.png" alt="BD_OFF" id="BD_OFF" width="100" height="100" style="position: absolute; top:600px; left:575px; display: none;">
+        </BD>
+        
+        <GD>
+            <img src="MidtermSiteFiles/GarageOpen.png" alt="GD_ON" id="GD_ON" width="100" height="100" style="position: absolute; top:700px; left:475px;">
+            <img src="MidtermSiteFiles/GarageClose.png" alt="GD_OFF" id="GD_OFF" width="100" height="100" style="position: absolute; top:700px; left:475px; display: none;">
+        </GD>
+        
+        <KF>
+            <img src="MidtermSiteFiles/KitchenFanOn.png" alt="KF_ON" id="KF_ON" width="100" height="100" style="position: absolute; top:400px; left:1025px;"
+            <img src="MidtermSiteFiles/FanOff.png" alt="KF_OFF" id="KF_OFF" width="100" height="100" style="position: absolute; top:400px; left:1050px; display: none;">
+        </KF>
+        
+        <DRL>
+            <img src="MidtermSiteFiles/LightOn3.png" alt="DRL_ON" id="DRL_ON" width="100" height="100" style="position: absolute; top:100px; left:1575px;"
+            <img src="MidtermSiteFiles/LightOff.png" alt="DRL_OFF" id="DRL_OFF" width="100" height="100" style="position: absolute; top:100px; left:1450px; display: none;">
+        </DRL>
+    </icons>
+    
+    <body>
+        <!-- Footer Button HTML -->
+        <div id="Footer">
+            <button onclick="window.location.href='Settings.html';">To Settings</button>
+        </div>
     </body>
 </html>
