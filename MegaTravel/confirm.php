@@ -1,4 +1,9 @@
 <!DOCTYPE html>
+
+    <?php
+    $db = mysqli_connect('localhost', 'root', '', 'db_contact') or die('error connecting to database');
+    ?>
+
 <html>
 
 <head>
@@ -146,11 +151,11 @@
     $numChild = $_POST["child"];
     $date = $_POST["date"];
     $destination = $_POST["destination"];
-    // $activity1 = $_POST["option1"];
-    // $activity2 = $_POST["option2"];
-    // $activity3 = $_POST["option3"];
-    // $activity4 = $_POST["option4"];
-    // $activity5 = $_POST["option5"];
+
+    $sql = "INSERT INTO `tbl_contact` (`fName`, `lName`, `eMail`, `phoneNumber`, `adultNumber`, `childNumber`, `tripDate`, `destinationName`, `id`) 
+                                VALUES ('$firstName', '$lastName', '$email', '$pNumber', '$numAdult', '$numChild', '$date', '$destination', '0')";
+    $rs = mysqli_query($db, $sql);
+
     ?>
     
     <div id="Thank">
