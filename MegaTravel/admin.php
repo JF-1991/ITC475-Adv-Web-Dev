@@ -99,6 +99,7 @@ $result = mysqli_query($db, "SELECT * FROM tbl_contact");
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
+            color: cyan;
         }
 
         /* Footer CSS */

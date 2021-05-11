@@ -1,0 +1,101 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+
+    <title>The Greatest Race</title>
+    <meta name="Final Project" content="The Greatest Race">
+    <style>
+        body {
+            background-image: url("SiteFiles/background.jpg");
+            background-repeat: repeat;
+            background-size: 1920px 1080px;
+        }
+        checkbox {
+            color: white;
+            float: left;
+        }
+        raceForm {
+            color: white;
+            float: right;
+        }
+    </style>
+    <script type="text/javascript" src="RaceControls.js"></script>
+</head>
+
+<lightCycles>
+    <img src="SiteFiles/lightCycleRed.png" alt="Red Light Cycle" id="lightCycleRed" width="200" height="87.5"
+        style="position: absolute; top: 890px; left: 10px; display: none;">
+    <img src="SiteFiles/lightCycleGreen.png" alt="Green Light Cycle" id="lightCycleGreen" width="200" height="87.5"
+        style="position: absolute; top: 880px; left: 10px; display: none;">
+    <img src="SiteFiles/lightCycleBlue.png" alt="Blue Light Cycle" id="lightCycleBlue" width="200" height="87.5"
+        style="position: absolute; top: 800px; left: 10px; display: none;">
+    <img src="SiteFiles/lightCycleOrange.png" alt="Orange Light Cycle" id="lightCycleOrange" width="200" height="87.5"
+        style="position: absolute; top: 790px; left: 10px; display: none;">
+</lightCycles>
+
+<winnerText>
+    <img src="SiteFiles/winBlue.png" alt="Blue Win" id="winBlue" usemap="#restartRace" width="600" height="400"
+        style="position: absolute; top: 270px; left: 660px; display: none;">
+    <img src="SiteFiles/winRed.png" alt="Red Win" id="winRed" usemap="#restartRace" width="600" height="400"
+        style="position: absolute; top: 270px; left: 660px; display: none;">
+    <img src="SiteFiles/winGreen.png" alt="Green Win" id="winGreen" usemap="#restartRace" width="600" height="400"
+        style="position: absolute; top: 270px; left: 660px; display: none;">
+    <img src="SiteFiles/winOrange.png" alt="Orange Win" id="winOrange" usemap="#restartRace" width="600" height="400"
+        style="position: absolute; top: 270px; left: 660px; display: none;">
+</winnerText>
+
+<map name="restartRace">
+        <area shape="rect" coords="100, 50, 550, 200" onclick="restartRace(),formSubmit()" type="submit" value="submit">
+</map>
+
+<stopLight>
+    <img src="SiteFiles/neonStop.png" alt="Neon Stop" id="stopLight" usemap="#go" width="356" height="356"
+        style="float: left;">
+
+    <map name="go">
+        <area shape="circle" coords="178,178,120" onclick="startRace(), moveObject()">
+    </map>
+</stopLight>
+
+<goLight>
+    <img src="SiteFiles/neonGo.png" alt="Neon Go" id="goLight" usemap="#stop" width="356" height="356"
+        style="float: left; display: none; position: absolute;">
+</goLight>
+
+<lightCycleSelect>
+    <checkbox id="checkBox">
+        <p>Please select two cycles to race.</p>
+        <input type="checkbox" id="cycleBlue" value="Blue">
+        <label for="cycleBlue">Blue</label><br>
+
+        <input type="checkbox" id="cycleRed" value="Red">
+        <label for="cycleRed">Red</label><br>
+
+        <input type="checkbox" id="cycleGreen" value="Green">
+        <label for="cycleGreen">Green</label><br>
+
+        <input type="checkbox" id="cycleOrange" value="Orange">
+        <label for="cycleOrange">Orange</label><br>
+
+        <button id="submit" onclick="submitRace()">Submit</button><br>
+    </checkbox>
+</lightCycleSelect>
+
+<raceForm>
+    <form name="raceForm" action="stats.php" method="post">
+        <p>Race results.</p>
+        <label for="winner"></label>
+        <input type="text" id="winner" name="winner" placeholder="Winner"><br><br>
+        <label for="loss"></label>
+        <input type="text" id="loss" name="loss" placeholder="Loss"><br><br>
+        <label for="time"></label>
+        <input type="float" id="time" name="time" placeholder="Time"><br><br>
+        <input type="submit" id="submitButton" value="Submit Results" usemap="#restartRace">
+        <input type="button" id="resultButton" value="Results Page" onclick="window.location.href='admin.php';"> 
+    </form>
+</raceForm>
+
+</html>
