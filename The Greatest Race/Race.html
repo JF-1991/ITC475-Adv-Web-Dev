@@ -13,10 +13,12 @@
             background-repeat: repeat;
             background-size: 1920px 1080px;
         }
+
         checkbox {
             color: white;
             float: left;
         }
+
         raceForm {
             color: white;
             float: right;
@@ -48,7 +50,7 @@
 </winnerText>
 
 <map name="restartRace">
-        <area shape="rect" coords="100, 50, 550, 200" onclick="restartRace(),formSubmit()" type="submit" value="submit">
+    <area shape="rect" coords="100, 50, 550, 200" onclick="restartRace(),formSubmit()" type="submit" value="submit">
 </map>
 
 <stopLight>
@@ -94,7 +96,7 @@
         <label for="time"></label>
         <input type="float" id="time" name="time" placeholder="Time"><br><br>
         <input type="submit" id="submitButton" value="Submit Results" usemap="#restartRace">
-        <input type="button" id="resultButton" value="Results Page" onclick="window.location.href='admin.php';"> 
+        <input type="button" id="resultButton" value="Results Page" onclick="window.location.href='admin.php';">
     </form>
 </raceForm>
 

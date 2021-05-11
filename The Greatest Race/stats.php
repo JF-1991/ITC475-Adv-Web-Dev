@@ -1,11 +1,11 @@
 <!doctype html>
 
-    <?php
-    $db = mysqli_connect('localhost', 'root', '', 'db_greatrace');
-    if (mysqli_connect_errno($db)) {
-        echo "Error connecting to database";
-    }
-    ?>
+<?php
+$db = mysqli_connect('localhost', 'root', '', 'db_greatrace');
+if (mysqli_connect_errno($db)) {
+    echo "Error connecting to database";
+}
+?>
 
 <html lang="en">
 
@@ -20,6 +20,7 @@
             background-repeat: repeat;
             background-size: 1920px 1080px;
         }
+
         /* Table CSS */
         table {
             font-family: arial, sans-serif;
@@ -28,12 +29,14 @@
             margin-left: auto;
             margin-right: auto;
         }
-        td, th ,a{
+
+        td,
+        th,
+        a {
             border: 1px solid #dddddd;
             text-align: center;
             padding: 8px;
             color: cyan;
-            
         }
     </style>
 </head>
@@ -50,7 +53,7 @@
     $rs = mysqli_query($db, $sql);
     if (!$rs) echo "inserted";
     ?>
-    
+
     <table>
         <tr>
             <td>Race Results</td>

@@ -108,7 +108,7 @@ function moveObject() {
   var timerID = 0;
   timerID = setInterval(function () {
     time += 1;
-    
+
 
     if (checkBoxRed.checked == true) {
       var randLengthRed = Math.floor(Math.random() * 25 + 1);
@@ -167,7 +167,7 @@ function moveObject() {
 
 // Submit data to form/database
 function formSubmit() {
-  time = time * .05;
+  time = time * .05; // Convert time to seconds
   document.getElementById("winner").value = winner;
   document.getElementById("loss").value = loss;
   document.getElementById("time").value = time;

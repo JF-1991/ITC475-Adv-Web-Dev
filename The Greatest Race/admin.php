@@ -2,7 +2,7 @@
 
 <?php
 $db = mysqli_connect('localhost', 'root', '', 'db_greatrace') or die('error connecting to database');
-$result = mysqli_query($db, "SELECT * FROM tbl_racestat");
+$result = mysqli_query($db, "SELECT * FROM tbl_racestat order by raceID DESC LIMIT 5");
 ?>
 
 <html lang="en">
@@ -18,6 +18,7 @@ $result = mysqli_query($db, "SELECT * FROM tbl_racestat");
             background-repeat: repeat;
             background-size: 1920px 1080px;
         }
+
         /* Table CSS */
         table {
             font-family: arial, sans-serif;
@@ -26,10 +27,18 @@ $result = mysqli_query($db, "SELECT * FROM tbl_racestat");
             margin-left: auto;
             margin-right: auto;
         }
-        td, th {
+
+        td,
+        th {
             border: 1px solid #dddddd;
             text-align: left;
             padding: 8px;
+            color: cyan;
+        }
+
+        p,
+        a {
+            text-align: center;
             color: cyan;
         }
     </style>
@@ -40,14 +49,12 @@ $result = mysqli_query($db, "SELECT * FROM tbl_racestat");
     if (mysqli_num_rows($result) > 0) {
     ?>
         <table>
-
             <tr>
                 <td>Winner</td>
                 <td>Loss</td>
                 <td>Time</td>
                 <td>Race ID</td>
             </tr>
-
             <?php
             $i = 0;
             while ($row = mysqli_fetch_array($result)) {
@@ -68,4 +75,5 @@ $result = mysqli_query($db, "SELECT * FROM tbl_racestat");
         echo "No result found";
     }
     ?>
+    <p><a href="Race.html">Click here to go back to the races.</a></p>
 </body>
